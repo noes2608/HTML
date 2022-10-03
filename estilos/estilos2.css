@@ -10,7 +10,7 @@ header{
 }
 
 .navegacion{
-    height: 150px;
+    height: auto;
     justify-content: flex-end;
     align-items:center;
     margin-right: 20px;
