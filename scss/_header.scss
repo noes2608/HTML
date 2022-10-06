@@ -1,0 +1,27 @@
+header{
+    border-bottom: solid 1px rgb(106, 141, 161);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+        .logo{
+            width: 12vw;
+        }
+        .navegacion{
+            height: auto;
+            justify-content: flex-end;
+            align-items:center;
+            margin-right: 20px;
+            font-size: larger;
+            font-family: map-get($fuentes,fuentePrincipal)
+        }
+              ul{  
+                 li{
+                    padding: 10px 15px 10px 15px;
+                    margin: 5px;
+                    background-color: $colorNavegador;
+                      &:hover{
+                        background-color: $colorNavHover;
+                      }
+                    }
+                }               
+}
