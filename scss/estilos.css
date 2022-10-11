@@ -1,0 +1,214 @@
+header {
+  border-bottom: solid 1px rgb(106, 141, 161);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .logo {
+  width: 12vw;
+}
+header .navegacion {
+  height: auto;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header ul li {
+  padding: 10px 15px 10px 15px;
+  margin: 5px;
+  background-color: rgb(58, 58, 197);
+}
+header ul li:hover {
+  background-color: rgb(96, 96, 245);
+}
+
+.titulo__index, .main__contacto .titulo__contacto, .main__ubicacion .ubicacion, .main__tarifas .tarifas {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: #3aa2cc;
+  font-size: 40px;
+}
+
+.main__index {
+  width: 100%;
+  height: 100%;
+}
+.main__index .imagenes_carousel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main__index .imagen_principal {
+  width: 900px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.main__index p {
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.main__index h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 70px;
+  color: #3aa2cc;
+  font-size: 40px;
+}
+
+footer {
+  background: radial-gradient(circle, rgb(208, 229, 244) 0%, rgb(63, 142, 180) 68%, rgb(59, 86, 164) 87%, rgb(83, 91, 134) 100%);
+  margin-top: 200px;
+  height: 25%;
+}
+footer .container_wsp {
+  position: fixed;
+  background-color: rgb(37, 211, 102);
+  border-radius: 100%;
+  z-index: 999;
+  bottom: 20px;
+  right: 25px;
+  padding: 15px;
+}
+footer .container_wsp .icono_wsp {
+  width: 50px;
+  height: 50px;
+}
+@-webkit-keyframes hvr-buzz {
+  50% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+footer .container_wsp .hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+footer .container_wsp .hvr-buzz:hover {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+footer .container_wsp .hvr-buzz:focus {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+footer .container_wsp .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.logo_footer img {
+  margin-top: 2%;
+  width: 15%;
+  height: auto;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  font-size: medium;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(119, 119, 235), 0 0 0.2em rgb(113, 113, 214);
+  color: white;
+}
+
+.iconos_redes img {
+  width: 25px;
+  margin: 1em;
+  margin-bottom: 2em;
+}
+.iconos_redes .hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+.iconos_redes .hvr-grow:hover {
+  transform: scale(1.1);
+}
+.iconos_redes .hvr-grow:focus {
+  transform: scale(1.1);
+}
+.iconos_redes .hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.main__tarifas .table {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.main__tarifas .nota_precios {
+  font-style: italic;
+  margin-left: 10px;
+  color: #206783;
+}
+
+.main__servicios {
+  margin-top: 100px;
+  width: 100%;
+}
+.main__servicios .main__cards {
+  background-color: #64e1f1;
+  margin: 25px;
+  padding: 25px;
+}
+.main__servicios .main__cards:hover {
+  transform: scale(1.1);
+}
+.main__servicios p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.main__ubicacion .direccion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  color: #3aa2cc;
+}
+.main__ubicacion .mapa {
+  width: 100%;
+}
+
+.main__contacto {
+  width: 70vw;
+  margin-left: 50px;
+}/*# sourceMappingURL=estilos.css.map */
