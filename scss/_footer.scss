@@ -15,25 +15,25 @@ footer{
            width: 50px;
            height: 50px;
         }
-        /*LOS VALORES DE LAS ANIMACIONES SE REPITEN, PERO NO SUPE SI SE PODIAN SIMPLIFICAR EN VARIABLES O CÓMO SE PODIA HACER*/
+        
         @-webkit-keyframes hvr-buzz {
             50% {
-              -webkit-transform: translateX(3px) rotate(2deg);
-              transform: translateX(3px) rotate(2deg);
+              -webkit-transform:$transform1;
+              transform:$transform1;
             }
             100% {
-              -webkit-transform: translateX(-3px) rotate(-2deg);
-              transform: translateX(-3px) rotate(-2deg);
+              -webkit-transform: $transform2;
+              transform:$transform2;
             }
         }
           @keyframes hvr-buzz {
             50% {
-              -webkit-transform: translateX(3px) rotate(2deg);
-              transform: translateX(3px) rotate(2deg);
+              -webkit-transform:$transform1 ;
+              transform: $transform1;
             }
             100% {
-              -webkit-transform: translateX(-3px) rotate(-2deg);
-              transform: translateX(-3px) rotate(-2deg);
+              -webkit-transform: $transform2;
+              transform: $transform2;
             }
         }
           .hvr-buzz {
@@ -47,30 +47,30 @@ footer{
                animation-name: hvr-buzz;
                -webkit-animation-duration: 0.15s;
                animation-duration: 0.15s;
-               -webkit-animation-timing-function: linear;
-               animation-timing-function: linear;
-               -webkit-animation-iteration-count: infinite;
-               animation-iteration-count: infinite;
+               -webkit-animation-timing-function: $linear;
+               animation-timing-function: $linear;
+               -webkit-animation-iteration-count: $infinita;
+               animation-iteration-count: $infinita;
             }
             &:focus{
                -webkit-animation-name: hvr-buzz;
                animation-name: hvr-buzz;
                -webkit-animation-duration: 0.15s;
                animation-duration: 0.15s;
-               -webkit-animation-timing-function: linear;
-               animation-timing-function: linear;
-               -webkit-animation-iteration-count: infinite;
-               animation-iteration-count: infinite;
+               -webkit-animation-timing-function: $linear;
+               animation-timing-function: $linear;
+               -webkit-animation-iteration-count: $infinita;
+               animation-iteration-count: $infinita;
             }
             &:active{
                 -webkit-animation-name: hvr-buzz;
                 animation-name: hvr-buzz;
                 -webkit-animation-duration: 0.15s;
                 animation-duration: 0.15s;
-                -webkit-animation-timing-function: linear;
-                animation-timing-function: linear;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite; 
+                -webkit-animation-timing-function: $linear;
+                animation-timing-function: $linear;
+                -webkit-animation-iteration-count: $infinita;
+                animation-iteration-count: $infinita; 
             }
         }
     }   
@@ -109,16 +109,16 @@ footer{
             -webkit-transition-property: transform;
             transition-property: transform;
             &:hover{
-                -webkit-transform: scale(1.2);
-                transform: scale(1.1);
+                -webkit-transform: $escala1;
+                transform: $escala2;
             }
             &:focus{
-                -webkit-transform: scale(1.2);
-                transform: scale(1.1);
+                -webkit-transform: $escala1;
+                transform: $escala2;
             }
             &:active{
-                -webkit-transform: scale(1.2);
-                transform: scale(1.1);
+                -webkit-transform: $escala1;
+                transform: $escala2;
             }
         }   
 }
