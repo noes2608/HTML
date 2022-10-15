@@ -76,6 +76,11 @@
     .titulo__contacto{
         @extend .titulo__index;
     }
+    .boton{
+        background-color: $colorCeleste;
+        padding: 1rem;
+    }
+
   }
 /*MAIN UBICACION*/
 .main__ubicacion{
